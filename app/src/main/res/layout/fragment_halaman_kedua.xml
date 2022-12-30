@@ -8,13 +8,13 @@
     tools:context=".vPagerFragment.screen.HalamanPertama">
 
     <TextView
-        android:id="@+id/tv_hal_pertama"
+        android:id="@+id/tv_hal_kedua"
         android:layout_width="287dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="77dp"
         android:layout_marginTop="52dp"
-        android:text="Nikmati beragam kemudahan lelang dari LelangYuk"
+        android:text="Aplikasi lelang tanpa ribet!"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -27,21 +27,21 @@
         android:id="@+id/iv_hal_pertama"
         android:layout_width="370dp"
         android:layout_height="370dp"
-        android:src="@drawable/vector_hal_pertama"
-        app:layout_constraintTop_toBottomOf="@+id/tv_hal_pertama"
+        android:src="@drawable/vector_hal_kedua"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hal_kedua"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_start"
+        android:id="@+id/btn_next"
         android:layout_width="314dp"
         android:layout_height="70dp"
         android:layout_marginBottom="70dp"
-        android:text="@string/start"
-        android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/next"
         android:textAllCaps="false"
         android:textColor="@color/main"
-        android:backgroundTint="@color/white"
+        android:textSize="20dp"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
