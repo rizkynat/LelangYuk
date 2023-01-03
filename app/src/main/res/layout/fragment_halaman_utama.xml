@@ -4,20 +4,70 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HalamanUtamaFragment">
+    tools:context=".HalamanUtamaFragment"
+    android:background="@color/main">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
     <TextView
         android:id="@+id/txt_hal_login"
-        android:layout_width="wrap_content"
+        android:layout_width="264dp"
         android:layout_height="wrap_content"
-        android:text="Hamalaman Login"
-        android:textColor="@color/main"
-        android:textSize="30sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Selamat Datang"
+        android:textColor="@color/white"
+        android:textSize="65sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:background="@drawable/bg_box_rounded"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="36sp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Masuk"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Masukkan email"
+                android:drawableStart=""
+                android:inputType="text"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_name">
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
