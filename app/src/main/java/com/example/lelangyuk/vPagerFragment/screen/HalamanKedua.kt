@@ -26,7 +26,7 @@ class HalamanKedua : Fragment() {
         val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
 
         binding.btnNext.setOnClickListener{
-            findNavController().navigate(R.id.action_viewPagerFragment_to_halamanUtamaFragment)
+            findNavController().navigate(R.id.action_viewPagerFragment_to_loginAcitvity)
         }
         return view
     }

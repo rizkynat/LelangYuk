@@ -21,7 +21,7 @@ class SplashScreenFragment : Fragment() {
         // Inflate the layout for this fragment
         Handler(Looper.getMainLooper()).postDelayed({
             if(onBoardingFinished()){
-                findNavController().navigate(R.id.action_splashScreenFragment_to_halamanUtamaFragment)
+                findNavController().navigate(R.id.action_splashScreenFragment_to_loginAcitvity)
             }else{
                 findNavController().navigate(R.id.action_splashScreenFragment_to_viewPagerFragment)
             }
