@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:text="About"
+        android:padding="20dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="101dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txt_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center_vertical|right"
+        android:src="@drawable/logo_lelangyuk_second" />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:justificationMode="inter_word"
+        android:padding="20dp"
+        android:text="LelangYuk Adalah balai lelang yang melelang barang-barang seperti elektornik, kendaraan, fashion dan properti. Berdiri sejak tahun 2022, LelangYuk merupakan Perusahaan rintisan dari 2 mahasiswa biasa yang memilki ambisi untuk memberikan solusi kepada masyarakat melal;ui teknologi.."
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:padding="20dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_marginTop="-35dp"
+        android:justificationMode="inter_word"
+        android:text="Siapapun dapat berpartipasi menjadi peserta lelang, baik peruisahaan atau perorangan, dari pembelian skala besar hingga satuan. LelangYuk mengadakan lelang tiap minggunya di 10 cabangyang tersebar di indonesia."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_marginTop="-35dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:justificationMode="inter_word"
+        android:padding="20dp"
+        android:text="Anda tidak hanya dapat berpartisipasi di lelang untuk membeli kendaraan, namun LelangYuk juga bisa menjadi solusi penjualan untuk mitra perusahaan yang ingin menjual aset mereka. Tidak hanya untuk perusahaan sebagai perorangan anda juga dapat menitipkan kendaraan untuk dijual melalui lelang LelangYuk."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3"
+        android:fontFamily="@font/raleway_semibold"
+        android:justificationMode="inter_word"
+        android:padding="20dp"
+        android:text="Hubungi Kami"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_web_24"
+        android:layout_below="@+id/txt4"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_call_24"
+        android:layout_below="@+id/img1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt4"
+        android:layout_marginStart="-119dp"
+        android:layout_marginTop="-32dp"
+        android:layout_toEndOf="@+id/txt4"
+        android:fontFamily="@font/raleway_semibold"
+        android:justificationMode="inter_word"
+        android:padding="20dp"
+        android:text="LelangYuk"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_marginStart="-125dp"
+        android:layout_marginTop="-13dp"
+        android:layout_toEndOf="@+id/txt4"
+        android:fontFamily="@font/raleway_semibold"
+        android:justificationMode="inter_word"
+        android:padding="20dp"
+        android:text=" No.Telp : 0761 - 8653492"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+
+
+
+

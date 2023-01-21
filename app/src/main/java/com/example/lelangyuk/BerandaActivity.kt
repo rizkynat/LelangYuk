@@ -1,7 +1,9 @@
 package com.example.lelangyuk
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,8 +19,8 @@ class BerandaActivity : AppCompatActivity() {
     private  val produkListAdapter = ProdukListAdapter(arrayListOf())
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.activity_beranda)
+        beranda_binding = ActivityBerandaBinding.inflate(layoutInflater)
+        setContentView(beranda_binding.root)
 
         viewModel = ViewModelProviders.of(this).get(ListViewModel::class.java)
         viewModel.fetchData()
@@ -29,6 +31,33 @@ class BerandaActivity : AppCompatActivity() {
         }
         observeViewModel()
 
+        beranda_binding.navigationView.setOnItemReselectedListener { item ->
+            when(item.itemId){
+                R.id.favorite -> {
+                    //startActivity(Intent(baseContext, LoginAcitvity::class.java))
+                    Toast.makeText(this, "Hai ini favorite", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.search -> {
+                    //startActivity(Intent(baseContext, LoginAcitvity::class.java))
+                    Toast.makeText(this, "Hai ini search", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.lelang -> {
+                //startActivity(Intent(baseContext, LoginAcitvity::class.java))
+                Toast.makeText(this, "Hai ini lelang", Toast.LENGTH_SHORT).show()
+                true
+                }
+                R.id.akun -> {
+                //startActivity(Intent(baseContext, LoginAcitvity::class.java))
+                Toast.makeText(this, "Hai ini akun", Toast.LENGTH_SHORT).show()
+                true
+                }
+                else -> {
+                    throw IllegalAccessException("ada yang salah")
+                }
+            }
+        }
 
     }
 
